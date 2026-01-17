@@ -7,7 +7,7 @@ A modern registration form built using HTML, Tailwind CSS, and JavaScript featur
 
 ## 📂 GitHub Repository
 
-🔗 Repository: 
+🔗 Repository: https://github.com/Ajayandrew/Simple_Registration_Form-.git
 
 ## Features
 - Glassmorphism UI with dark mode
