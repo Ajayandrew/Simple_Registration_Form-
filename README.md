@@ -3,7 +3,7 @@ A modern registration form built using HTML, Tailwind CSS, and JavaScript featur
 
 ## 🚀 Live Demo
 
-🔗 Live Site:
+🔗 Live Site: https://ajayandrew.github.io/Simple_Registration_Form-/
 
 ## 📂 GitHub Repository
 
