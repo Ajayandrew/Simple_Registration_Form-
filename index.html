@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome for Eye Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="min-h-screen bg-cover bg-center flex items-center justify-center"
+    style="background-image: url('./images/BG\ image.png');">
+
+    <!-- Dark Overlay -->
+    <div class="absolute inset-0 bg-black/70"></div>
+
+    <!-- Glass Card -->
+    <div class="relative bg-white/10 backdrop-blur-xl border border-white/20
+              rounded-xl p-8 w-full max-w-md text-white shadow-2xl">
+
+        <h2 class="text-3xl font-bold text-center mb-6">Registration</h2>
+
+        <form id="registerForm" class="space-y-5">
+
+            <!-- Name -->
+            <div>
+                <label>Name</label>
+                <input id="name" type="text" class="w-full mt-1 p-2 rounded-full bg-white/20 border border-white/30
+                 focus:ring-2 focus:ring-cyan-400 outline-none">
+                <p id="nameError" class="text-red-400 text-sm hidden">Name is required</p>
+            </div>
+
+            <!-- Email -->
+            <div>
+                <label>Email</label>
+                <input id="email" type="email" class="w-full mt-1 p-2 rounded-full bg-white/20 border border-white/30
+                 focus:ring-2 focus:ring-cyan-400 outline-none">
+                <p id="emailError" class="text-red-400 text-sm hidden">
+                    Enter a valid email address
+                </p>
+            </div>
+
+            <!-- Password -->
+            <div>
+                <label>Password</label>
+
+                <div class="relative">
+                    <input id="password" type="password" class="w-full mt-1 p-2 rounded-full bg-white/20 border border-white/30
+                 focus:ring-2 focus:ring-cyan-400 outline-none">
+
+                    <!-- Eye Icon -->
+                    <i id="togglePassword"
+                        class="fa-solid fa-eye absolute right-3 top-4 cursor-pointer text-gray-300"></i>
+                </div>
+
+                <p id="passwordError" class="text-red-400 text-sm hidden">
+                    Password must be at least 6 characters
+                </p>
+
+                <p id="strengthMsg" class="text-sm mt-1"></p>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex gap-4">
+                <button id="submitBtn" type="submit" Disabled class ="flex-1 py-2 bg-cyan-500 rounded-full font-semibold
+                 opacity-50 cursor-not-allowed transition">
+                    Register
+                </button>
+
+                <button type="button" id="clearBtn"
+                    class="flex-1 py-2 bg-red-500 rounded-full font-semibold hover:bg-red-600">
+                    Clear
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <!-- External JS -->
+    <script src="Validation.js"></script>
+</body>
+
+</html>
